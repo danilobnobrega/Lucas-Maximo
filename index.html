@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Lucas Máximo · Assessor de Investimentos</title>
+  <meta name="description" content="Lucas Máximo, assessor de investimentos certificado CEA, com MBA em Investimentos e Private Banking. Unaí e Paracatu, noroeste de Minas Gerais." />
+  <meta name="theme-color" content="#07090d" />
+  <meta property="og:title" content="Lucas Máximo · Assessor de Investimentos" />
+  <meta property="og:description" content="Carteiras de investimentos para pessoas e empresas no noroeste de Minas." />
+  <meta property="og:image" content="/lucas-src.png" />
+  <link rel="icon" href="/favicon.svg" />
+</head>
+<body>
+  <canvas id="gl" aria-hidden="true"></canvas>
+
+  <div class="loader" data-loader aria-hidden="true">
+    <span class="loader__n" data-loader-n>00</span>
+  </div>
+
+  <header class="hdr is-hidden" data-hdr>
+    <a class="hdr__brand" href="#topo" data-nav>Lucas Máximo</a>
+    <nav class="hdr__nav">
+      <button class="hdr__menu" type="button" data-menu-btn aria-expanded="false" aria-controls="menu">
+        <span class="hdr__menu-label" data-menu-label>Menu</span>
+      </button>
+      <a class="pill" href="#contato" data-nav><span>Conversar</span></a>
+    </nav>
+  </header>
+
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ol class="menu__list">
+      <li><a href="#quem" data-nav><span class="menu__w">Quem sou</span></a></li>
+      <li><a href="#trajetoria" data-nav><span class="menu__w">Trajetória</span></a></li>
+      <li><a href="#ajuda" data-nav><span class="menu__w">Como posso te ajudar</span></a></li>
+      <li><a href="#como" data-nav><span class="menu__w">Como funciona</span></a></li>
+      <li><a href="#estrutura" data-nav><span class="menu__w">Certificações</span></a></li>
+      <li><a href="#contato" data-nav><span class="menu__w">Contato</span></a></li>
+    </ol>
+    <p class="menu__foot">Assessor de investimentos · Unaí e Paracatu</p>
+  </div>
+
+  <main>
+    <!-- 1 · Abertura -->
+    <section class="hero" id="topo" data-hero>
+      <div class="hero__view" data-view="hero"></div>
+      <h1 class="sr">Lucas Máximo, assessor de investimentos</h1>
+    </section>
+
+    <!-- 2 · Quem sou -->
+    <section class="about" id="quem">
+      <div class="about__photo" data-view="slit" role="img" aria-label="Foto de Lucas Máximo"></div>
+      <div class="about__text">
+        <p class="eyebrow" data-split>Quem sou</p>
+        <h2 class="about__lead" data-split>Formado em tecnologia, especialista em investimentos. Decisões com método e dados.</h2>
+        <p class="about__body" data-fade>Sou graduado em Sistemas de Informação e fiz o MBA em Investimentos e Private Banking do Ibmec com a InfoMoney. Já fui assessor credenciado à XP e ao BTG Pactual e consultor em grandes escritórios de consultoria de investimentos do país. Hoje atendo pessoas e empresas em Unaí e Paracatu, no noroeste de Minas.</p>
+        <dl class="facts" data-fade>
+          <div><dt>Formação</dt><dd>Sistemas de Informação e MBA em Investimentos e Private Banking</dd></div>
+          <div><dt>Certificação</dt><dd>CEA (ANBIMA)</dd></div>
+          <div><dt>Base</dt><dd>Unaí e Paracatu, MG</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 3 · Trajetória -->
+    <section class="journey" id="trajetoria" data-journey>
+      <div class="journey__sticky">
+        <div class="journey__view" data-view="journey"></div>
+        <p class="eyebrow journey__eyebrow">Trajetória</p>
+        <div class="journey__labels">
+          <article class="mile" data-mile>
+            <h3 class="mile__title">Polícia Militar de Minas</h3>
+            <p class="mile__place">Unaí · 2015 a 2021</p>
+            <p class="mile__desc">Planejamento de operações: indicadores de desempenho, estatística e relatórios para decisões na Região Noroeste.</p>
+          </article>
+          <article class="mile" data-mile>
+            <h3 class="mile__title">Assessor e Head de Renda Fixa</h3>
+            <p class="mile__place">Onix Capital · 2020 a 2022</p>
+            <p class="mile__desc">Assessoria de investimentos e, depois, a área de renda fixa: cenário macro e oportunidades para assessores e clientes.</p>
+          </article>
+          <article class="mile" data-mile>
+            <h3 class="mile__title">Consultor de investimentos</h3>
+            <p class="mile__place">Clube do Valor e Eleva Invest · 2022 a 2025</p>
+            <p class="mile__desc">Estratégias de investimento nas carteiras dos clientes, com acompanhamento e rebalanceamento periódicos.</p>
+          </article>
+          <article class="mile" data-mile>
+            <h3 class="mile__title">Assessor de investimentos</h3>
+            <p class="mile__place">Santander · desde 2025</p>
+            <p class="mile__desc">Carteiras de investimentos para pessoas e empresas em Unaí e Paracatu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · Como posso te ajudar -->
+    <section class="help" id="ajuda" data-help>
+      <div class="help__sticky">
+        <div class="help__top">
+          <p class="eyebrow">Como posso te ajudar</p>
+          <p class="help__count"><span data-help-n>01</span> / 04</p>
+        </div>
+        <div class="help__view" data-view="board"></div>
+        <ul class="sr">
+          <li data-service data-title="Carteira" data-text="Uma carteira de investimentos montada para o seu objetivo e o seu prazo, com o motivo de cada escolha.">Carteira</li>
+          <li data-service data-title="Renda fixa" data-text="De quem já chefiou uma área de renda fixa: títulos públicos, crédito privado e o momento certo de cada um.">Renda fixa</li>
+          <li data-service data-title="Empresas" data-text="O caixa da sua empresa bem aplicado, com liquidez para o dia a dia e para os planos da empresa.">Empresas</li>
+          <li data-service data-title="Acompanhamento" data-text="Revisões periódicas e rebalanceamento da carteira, para ela continuar no rumo do seu objetivo.">Acompanhamento</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5 · Como funciona -->
+    <section class="how" id="como" data-how>
+      <div class="how__sticky">
+        <p class="eyebrow how__eyebrow">Como funciona</p>
+        <div class="how__stack">
+          <article class="card" data-card>
+            <span class="card__n">01</span>
+            <div><h3 class="card__title">Primeira conversa</h3><p class="card__text">Um café ou uma chamada de meia hora. Você me conta o que quer construir, eu escuto e tiro as dúvidas.</p></div>
+          </article>
+          <article class="card" data-card>
+            <span class="card__n">02</span>
+            <div><h3 class="card__title">Diagnóstico</h3><p class="card__text">Olho onde o seu dinheiro está hoje, quanto ele custa em taxas e quanto risco você corre.</p></div>
+          </article>
+          <article class="card" data-card>
+            <span class="card__n">03</span>
+            <div><h3 class="card__title">Carteira</h3><p class="card__text">Proponho uma carteira com o motivo de cada escolha, por escrito. Você decide com calma.</p></div>
+          </article>
+          <article class="card" data-card>
+            <span class="card__n">04</span>
+            <div><h3 class="card__title">Acompanhamento</h3><p class="card__text">Revisões periódicas e alguém que atende o telefone quando o mercado balança.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Certificações -->
+    <section class="press" id="estrutura" data-press-section>
+      <div class="press__view" data-view="press"></div>
+      <div class="press__inner">
+        <p class="eyebrow eyebrow--dark">Formação</p>
+        <h2 class="press__lead">Certificação ANBIMA e MBA em investimentos, a serviço da sua carteira.</h2>
+        <div class="press__cols">
+          <div>
+            <h3 class="press__name gl-press" data-press>CEA</h3>
+            <p>Especialista em Investimentos ANBIMA, a certificação para quem recomenda e acompanha carteiras de investimentos.</p>
+          </div>
+          <div>
+            <h3 class="press__name gl-press" data-press>Ibmec</h3>
+            <p>MBA em Investimentos e Private Banking pelo Ibmec, em parceria com a InfoMoney.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · Contato -->
+    <section class="contact" id="contato">
+      <div class="contact__text">
+        <p class="eyebrow">Contato</p>
+        <h2 class="contact__title" data-split>Vamos conversar?</h2>
+        <p class="contact__sub" data-fade>A primeira conversa é sem compromisso. Me chama no WhatsApp e a gente marca um café em Unaí, em Paracatu ou uma chamada.</p>
+        <div class="contact__actions" data-fade>
+          <a class="pill pill--big" href="https://wa.me/5538998157928" target="_blank" rel="noopener"><span>Chamar no WhatsApp</span></a>
+          <a class="ulink" href="mailto:lucasmaximo@outlook.com">E-mail</a>
+          <a class="ulink" href="https://www.instagram.com/soulucasmaximo/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+      <div class="contact__view" data-view="card" role="img" aria-label="Cartão de visitas de Lucas Máximo"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="foot__legal">Lucas Máximo é assessor de investimentos, certificado ANBIMA CEA. Investimentos envolvem riscos, inclusive de perda do capital. Rentabilidade passada não é garantia de rentabilidade futura. As informações deste site têm caráter informativo e não constituem recomendação de investimento.</p>
+    <p class="foot__line"><span>© 2026 Lucas Máximo</span><span>Unaí e Paracatu, MG</span></p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
