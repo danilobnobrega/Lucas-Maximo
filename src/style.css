@@ -345,3 +345,8 @@ main, .foot { position: relative; z-index: 1; }
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75), 0 -1px 0 rgba(0, 0, 0, 0.22);
   opacity: 0.94;
 }
+
+/* phones: a long name never touches the menu */
+@media (max-width: 420px) {
+  .hdr__brand { font-size: 1.02rem; margin-right: 14px; white-space: nowrap; }
+}
